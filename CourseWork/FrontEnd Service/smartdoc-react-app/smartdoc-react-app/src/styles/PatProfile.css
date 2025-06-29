@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Layout Wrapper */
+.pat-pro-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+
+/* Main content area */
+.pat-pro-main {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Header section */
+.pat-pro-header {
+  margin-bottom: 30px;
+}
+
+.pat-pro-header h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #333;
+}
+
+.pat-pro-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Card container */
+.pat-pro-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header */
+.pat-pro-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pat-pro-card-header h2 {
+  font-size: 20px;
+  color: #1a8f7d;
+}
+
+.pat-pro-edit-btn {
+  background-color: #1a8f7d;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pat-pro-edit-btn:hover {
+  background-color: #157466;
+}
+
+/* Form grid layout */
+.pat-pro-form {
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Form group */
+.pat-pro-form-group,
+.pat-pro-form-group-full-width {
+  display: flex;
+  flex-direction: column;
+}
+
+.pat-pro-form-group-full-width {
+  grid-column: span 2;
+}
+
+/* Inputs and textarea */
+.pat-pro-form input,
+.pat-pro-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 5px;
+}
+
+.pat-pro-form label {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.pat-pro-pass-header {
+  margin-top: 30px;
+}
+
+.pat-pro-pass-header h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #333;
+}
+
+.pat-pro-pass-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form grid layout */
+.pat-pro-pass-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+}
+
+/* Form group */
+.pat-pro-pass-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+
+/* Inputs*/
+.pat-pro-pass-form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.pat-pro-pass-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+
+.pat-pro-pass-update-btn {
+  background-color: #1a8f7d;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pat-pro-pass-update-btn:hover {
+  background-color: #157466;
+}

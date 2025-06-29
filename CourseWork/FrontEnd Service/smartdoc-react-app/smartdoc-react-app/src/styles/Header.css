@@ -1,0 +1,47 @@
+.header {
+  position: fixed;             /* 👈 Make it fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;               /* Ensure it's on top of all other elements */
+  background-color: #ffffff;   /* Ensure it has a background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  color: #047857;
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav a {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signin-btn {
+  padding: 6px 18px;
+  background-color: #2a9d8f;
+  text-decoration: none;
+  color:white; /* 👈 this makes the text white */
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.signin-btn:hover {
+  background-color: #21867a;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 👈 keeps it white on hover */
+}

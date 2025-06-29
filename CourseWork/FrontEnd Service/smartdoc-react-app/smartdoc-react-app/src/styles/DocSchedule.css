@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Wrapper for entire schedule page */
+.doc-shedule-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Main content */
+.doc-sch-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Page header */
+.doc-sch-header h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.doc-sch-header p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Availability form */
+.doc-sch-availability-form {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.doc-sch-form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.doc-sch-form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.doc-sch-form-group input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 160px;
+}
+
+.doc-sch-add-btn {
+  background-color: #0e9f6e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.doc-sch-add-btn:hover {
+  background-color: #0b8a5e;
+}
+
+/* Availability list */
+.doc-sch-availability-list {
+  margin: 30px;
+}
+
+.doc-sch-availability-list h3 {
+  margin-bottom: 16px;
+}
+
+/* Table header */
+.doc-sch-table-header,
+.doc-sch-table-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.doc-sch-table-header {
+  font-weight: 600;
+  color: #555;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+}
+
+/* Table row style */
+.doc-sch-table-row {
+  background: white;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Remove button */
+.doc-sch-remove-btn {
+  color: #e11d48;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.doc-sch-remove-btn:hover {
+  color: #be123c;
+}

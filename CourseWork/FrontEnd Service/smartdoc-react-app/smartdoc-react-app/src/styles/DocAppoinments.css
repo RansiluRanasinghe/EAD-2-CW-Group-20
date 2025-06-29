@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Layout wrapper */
+.doc-app-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* Main content area */
+.doc-app-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f9fafb;
+}
+
+/* Header */
+.doc-app-header h3 {
+  font-size: 24px;
+  color: #18b7ae;
+  margin-bottom: 5px;
+}
+
+.doc-app-header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.doc-tabs-and-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* optional: helps if the screen is small */
+}
+
+.doc-app-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.doc-app-tabs button {
+  padding: 8px 16px;
+  background: #f2f4f7;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.doc-app-tabs .active {
+  background-color: #18b7ae;
+  color: white;
+}
+
+.doc-app-search-box input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 14px;
+}
+
+
+/* Table */
+.doc-app-table {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.doc-app-table-header, .doc-app-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1fr 2fr;
+  padding: 16px;
+  align-items: center;
+}
+
+.doc-app-table-header {
+  background-color: #f9fafc;
+  font-weight: bold;
+  color: #555;
+  border-bottom: 2px solid #e0e0e0;
+  /*margin-bottom: 10px;*/
+}
+
+.doc-app-table-row {
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  margin: 10px 0;                 /* creates vertical spacing between rows */
+  border-radius: 3px;            /* optional: rounded corners for row cards */
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1fr 2fr;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.doc-app-table-row:hover {
+  background-color: #f6f6f6;
+}
+
+/* Status badges */
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status.confirmed {
+  background-color: #eef4ff;
+  color: #3370ff;
+}
+
+.status.completed {
+  background-color: #e6f7ec;
+  color: #28a745;
+}
+
+.status.cancelled {
+  background-color: #fcebea;
+  color: #dc3545;
+}
+
+/* Action buttons */
+.doc-app-action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button.doc-app-complete-btn {
+  background-color: #18b7ae;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button.doc-app-cancel-btn {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+/* Layout */
+.pat-book-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #f7f9fb;
+}
+
+.pat-book-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Header */
+.pat-book-header {
+  margin-bottom: 1.5rem;
+}
+
+.pat-book-header h3 {
+  font-size: 1.8rem;
+  color: #2a4fff;
+  margin: 0;
+}
+
+/* Search Bar */
+.pat-book-search {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pat-book-search input[type="text"],
+.pat-book-search input[type="date"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Doctor Grid */
+.pat-book-doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Doctor Card */
+.book-doc-card {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 12p
+}

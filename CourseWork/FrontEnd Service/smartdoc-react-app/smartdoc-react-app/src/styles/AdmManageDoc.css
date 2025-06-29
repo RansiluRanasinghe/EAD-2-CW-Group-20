@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.adm-man-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.adm-man-main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.adm-man-header h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.adm-man-auth {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: auto;
+}
+
+.adm-man-auth h2 {
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.man-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.man-auth-form label {
+  font-weight: 500;
+  color: #555;
+}
+
+.man-auth-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.man-auth-form button {
+  width: fit-content;
+  padding: 10px 18px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.man-auth-form button:hover {
+  background: #0056b3;
+}
+
+.man-auth-form button[type="button"] {
+  background: #6c757d;
+  margin-left: 10px;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+th {
+  background-color: #f0f2f5;
+  color: #444;
+  font-weight: 600;
+}
+
+td button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+td button:first-of-type {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+td button:first-of-type:hover {
+  background-color: #e0a800;
+}
+
+td button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+td button:last-of-type:hover {
+  background-color: #c82333;
+}

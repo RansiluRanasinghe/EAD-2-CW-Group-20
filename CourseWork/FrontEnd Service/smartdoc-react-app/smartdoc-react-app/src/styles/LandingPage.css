@@ -1,0 +1,19 @@
+* {
+  margin-top: 80px;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+  padding-top: 80px;
+  
+}
+
+html {
+  padding-top: 80px;
+  scroll-behavior: smooth;
+}

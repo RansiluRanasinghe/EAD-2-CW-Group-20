@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Layout Wrapper */
+.pat-app-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* Main Content Area */
+.pat-app-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.pat-app-header h3 {
+  font-size: 24px;
+  color: #18b7ae;
+  margin-bottom: 8px;
+}
+
+.pat-app-tabs {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* optional: helps if the screen is small */
+  gap: 10px;
+}
+
+.pat-app-tabs button {
+  padding: 8px 16px;
+  background: #f2f4f7;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.pat-app-tabs .active {
+  background-color: #18b7ae;
+  color: white;
+}
+
+/* Appointments Section */
+
+.pat-appointments > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Appointment Card */
+.pat-app-card {
+  flex: 1;
+  width: 100%;
+  min-width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pat-app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.pat-app-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pat-app-card-info h5 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.pat-app-card-info h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.pat-app-card-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.pat-app-card-action {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.pat-app-sts {
+  background-color: #e0edff;
+  color: #1a73e8;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pat-app-cancel-btn {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pat-app-cancel-btn:hover {
+  background-color: #c62828;
+}
